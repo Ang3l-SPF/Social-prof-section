@@ -1,0 +1,197 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body{
+    background-color: var(--White);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-size: 15px;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.header{
+    margin: 2rem 1rem;
+    text-align: center;
+}
+
+.title{
+    padding: .5em;
+    color: var(--Very-Dark-Magenta);
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.desc{
+    padding: .5em;
+    font-size: 1.1rem;
+    color: var(--Dark-Grayish-Magenta)
+}
+
+.rated-container{
+    padding: .5em;
+}
+
+.rated{
+    background-color: var(--Light-Grayish-Magenta);
+    margin: 1rem auto;
+    border-radius: .5em;
+    padding: 1em;
+}
+
+.rated-text{
+    margin-top: .7em;
+    color: var(--Very-Dark-Magenta);
+    font-weight: 700;
+}
+
+.star-img{
+    margin-right: .3em;
+}
+
+.comments-container{
+    padding: 1em;
+}
+.card-container{
+    background-color: var(--Very-Dark-Magenta);
+    padding: 2rem;
+    margin-bottom: 1rem;
+    border-radius: .5em;
+    color: var(--White);
+}
+
+.card-header{
+    margin-bottom: 1.5rem;
+}
+
+.profile-img{
+    max-width: 20%;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 1em;
+}
+
+.user-name{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.user-name--job-color{
+    display: block;
+    padding-top: .3em;
+    color: var(--Soft-Pink);
+    font-weight: 400;
+}
+
+.opinion{
+    padding-right: 1em;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+@media screen and (min-width: 1200px) {
+
+
+    .general-container{
+        width: 90%;
+    }
+
+    .header{
+        display: flex;
+        text-align: left;
+        margin-left: 0;
+    }
+
+    .head-container,
+    .rated-container{
+        width: 50%;
+    }
+
+    .title,
+    .desc,
+    .comments-container{
+        padding-left: 0;
+    }
+
+    .title{
+        width: 60%;
+        font-size: 3rem;
+    }
+
+    .desc{
+        width: 70%;
+    }
+
+    .rated-container{
+        position: relative;
+    }
+
+    .rated{
+        position: absolute;
+        margin: 1em 0;
+        padding: 1em 2em;
+        width: 400px;
+    }
+
+    .rated--center{
+        top: 30%;
+        left: 10%;
+    }
+
+    .rated--right{
+        top: 60%;
+        right: 0;
+    }
+
+    .starts-container,
+    .rated-text{
+        display:  inline-block;
+        vertical-align: middle;
+    }
+
+    .rated-text{
+        margin-top: 0;
+        margin-left: 2em;
+    }
+
+    .comments-container{
+        position: relative;
+    }
+
+    .card-container{
+        display: inline-block;
+        width: 300px;
+    }
+
+    .card--center,
+    .card--bottom{
+        position: absolute;
+    }
+
+    .card--center{
+        left: 35%;
+        top: 10%
+    }
+
+    .card--bottom{
+        right: 0;
+        top: 20%;
+    }
+    
+
+}
